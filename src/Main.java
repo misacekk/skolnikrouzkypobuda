@@ -42,7 +42,7 @@ public class Main {
         System.out.println("=== NEJDRAŽŠÍ KROUŽEK ===");
         Krouzek nejdrazsi = krouzek.get(0);
         for (int i = 1; i < krouzek.size(); i++) {
-            if (krouzek.get(i).vypoctiRocniNaklady() < nejdrazsi.vypoctiRocniNaklady()) {
+            if (krouzek.get(i).vypoctiRocniNaklady() > nejdrazsi.vypoctiRocniNaklady()) {
                 nejdrazsi = krouzek.get(i);
                 nejdrazsi.vypisInformace();
             }
